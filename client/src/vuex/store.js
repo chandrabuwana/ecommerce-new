@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 import axios from 'axios'
 
 const http = axios.create({
-  baseURL: 'http://localhost:3000'
+  baseURL: 'http://35.185.189.124'
 })
 
 Vue.use(Vuex)

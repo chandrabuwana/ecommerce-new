@@ -1,5 +1,5 @@
 <template>
-  <!-- <div>
+  <div>
 <div class="container">
   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-shopping-cart" style="font-size:48px;color:red"></i></button>
 
@@ -13,7 +13,7 @@
         </div>
         <div  class="modal-body">
           <div class="row">
-            <div v-for="(item, index) in cartshop" class="col-md-4" >
+            <div v-for="(item, index) in cartshop" :key="index" class="col-md-4" >
               <img class="gambar" :src="item.image" alt="" width="100" height="100">
               <p>Name: {{item.nameItem}}</p>
               <p>Price: Rp {{item.price }}.000,00 x {{item.quantity}}</p>
@@ -60,4 +60,4 @@ h4{
 .gambar{
  width: 100%
 }
-</style> -->
+</style>
